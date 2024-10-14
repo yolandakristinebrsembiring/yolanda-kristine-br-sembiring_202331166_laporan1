@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data diri</title>
+    <script>
+        function tampilkanGIF() {
+            // Menyembunyikan form setelah submit
+            document.getElementById('form-container').style.display = 'none';
+
+            // Menampilkan GIF
+            document.getElementById('gif-container').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Bagian form -->
+    <div id="form-container">
+        <h1>Formulir Data Diri</h1>
+        <form onsubmit="tampilkanGIF(); return false;">
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td>Nama:</td>
+                    <td><input type="text" name="nama" required></td>
+                </tr>
+                <tr>
+                    <td>NIM:</td>
+                    <td><input type="text" name="nim" required></td>
+                </tr>
+                <tr>
+                    <td>Tanggal:</td>
+                    <td><input type="date" name="tanggal" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- Bagian GIF -->
+    <div id="gif-container" style="display: none; text-align: center;">
+        <h2>Terima Kasih!</h2>
+        <img src="celebration-gif.webp" alt="Celebration GIF" width="500" height="226">
+    </div>
+    <a href="index.html">halaman utama</a>
+    <a href="tentang diriku.html">tentang diri saya</a>
+    <a href="random.html">hal random</a>
+</body>
+</html>
